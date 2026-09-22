@@ -1,0 +1,62 @@
+# --- Sistema operativo ---
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+
+# --- Editores / IDEs ---
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/*
+!.vscode/extensions.json
+.fleet/
+
+# --- Secretos y entorno local ---
+.env
+.env.*
+!.env.example
+local.properties
+*.keystore
+*.jks
+
+# --- Herramientas de IA (estado local) ---
+.claude/settings.local.json
+.opencode/node_modules/
+.opencode/package.json
+.opencode/package-lock.json
+.opencode/bun.lock
+
+# --- Node (splitter-app y tooling) ---
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# --- Gradle / Kotlin (finance-app) ---
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+.kotlin/
+captures/
+*.hprof
+*.apk
+*.aab
+
+# --- iOS / Xcode ---
+xcuserdata/
+DerivedData/
+*.xcuserstate
+Pods/
+*.ipa
+
+# --- Bases de datos locales ---
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# --- Logs ---
+*.log
+logs/

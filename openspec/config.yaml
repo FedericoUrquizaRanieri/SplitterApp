@@ -1,0 +1,41 @@
+schema: spec-driven
+
+# Project context
+# This is shown to AI when creating artifacts.
+context: |
+  Dominio: app de finanzas personales (ingresos/egresos, cuentas, categorías,
+  presupuestos, análisis, dashboard) más grupos para dividir gastos entre personas.
+  Monousuario, sin autenticación en esta fase.
+  Proyecto activo: `finance-app/` (a crear), Kotlin Multiplatform con UI compartida
+  en Compose Multiplatform para Android, iOS y Desktop. Módulos: `shared`,
+  `composeApp` y `backend` (Ktor Server, JVM).
+  Stack: Kotlin, Compose Multiplatform, SQLDelight (local-first), Ktor Client/Server,
+  coroutines/Flow, kotlinx-serialization, Koin. Gráficos propios con Canvas.
+  Convenciones: montos en centavos (Long), ids UUID generados en el cliente,
+  `updated_at` + `deleted_at` (borrado lógico) en toda entidad sincronizable,
+  sincronización last-write-wins por `updated_at`. MVVM con flujo unidireccional.
+  Lógica de dominio testeable en JVM.
+  `splitter-app/` (Next.js) es legado/obsoleto: no se modifica ni se usa como referencia.
+  Idioma de specs y documentación: español.
+
+# Per-artifact rules (optional)
+# Add custom rules for specific artifacts.
+# Example:
+#   rules:
+#     proposal:
+#       - Keep proposals under 500 words
+#       - Always include a "Non-goals" section
+#     tasks:
+#       - Break tasks into chunks of max 2 hours
+
+# Per-operation guidance (optional)
+# Add advisory guidance for how apply and archive work should be conducted.
+# This is separate from artifact rules above.
+# Example:
+#   operations:
+#     apply:
+#       guidance:
+#         - Keep test summaries concise
+#     archive:
+#       guidance:
+#         - Summarize the archive outcome before finishing
